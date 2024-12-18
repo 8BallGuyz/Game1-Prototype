@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class collision : MonoBehaviour
 {
+    public GameObject enemy;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -14,8 +15,18 @@ public class collision : MonoBehaviour
         
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        Destroy(gameObject);
+        
+        if (other.CompareTag("Enemy"))
+        {
+            Destroy(other.gameObject);
+            Destroy(gameObject);
+        }
+
+        if (other.CompareTag("wall"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

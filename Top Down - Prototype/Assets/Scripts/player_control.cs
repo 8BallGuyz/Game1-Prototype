@@ -5,6 +5,8 @@ using System.Collections.Generic;
 public class player_control : MonoBehaviour
 {
     public float speed;
+    public float defaultspeed;
+    public float sprintspeed;
 
     public Camera cam;
 
@@ -34,5 +36,19 @@ public class player_control : MonoBehaviour
         Vector2 LookDir = MousePos - rb.position;
         float angle = Mathf.Atan2(LookDir.y, LookDir.x) * Mathf.Rad2Deg - 90f;
         rb.rotation = angle;
+
+        sprint();
+    }
+
+    void sprint()
+    {
+        if(Input.GetKey(KeyCode.LeftShift))
+        {
+            speed = sprintspeed;
+        }
+        else
+        {
+            speed = defaultspeed;
+        }
     }
 }
