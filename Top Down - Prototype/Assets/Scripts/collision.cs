@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class collision : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class collision : MonoBehaviour
         {
             Destroy(other.gameObject);
             Destroy(gameObject);
+            ScoreManager.instance.AddPoint();
         }
 
         if (other.CompareTag("wall"))
