@@ -2,6 +2,10 @@ using UnityEngine;
 
 public class Square_AI : MonoBehaviour
 {
+
+    public GameOverScreen gameOverScreen;
+    public player_control player_Control;
+
     public float speed;
     public Rigidbody2D rb;
 

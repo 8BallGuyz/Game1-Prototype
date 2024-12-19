@@ -8,6 +8,7 @@ TagManager:
   - wall
   - follow
   - bullet
+  - spawner
   layers:
   - Default
   - TransparentFX

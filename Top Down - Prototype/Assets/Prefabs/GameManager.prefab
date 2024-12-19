@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3833120087030826598
+--- !u!1 &304615701159228215
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,42 +8,50 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4825611618212613607}
-  - component: {fileID: 3303354926030072871}
+  - component: {fileID: 7104966194287533800}
+  - component: {fileID: 8248215854519487084}
   m_Layer: 0
-  m_Name: Spawner
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4825611618212613607
+--- !u!4 &7104966194287533800
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3833120087030826598}
+  m_GameObject: {fileID: 304615701159228215}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.26, y: -0.73, z: 0.012747172}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 318.53046, y: 223.35072, z: -3.475242}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3303354926030072871
+--- !u!114 &8248215854519487084
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3833120087030826598}
+  m_GameObject: {fileID: 304615701159228215}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbddee96a45db6d48a4805fd199b68f5, type: 3}
+  m_Script: {fileID: 11500000, guid: 5c42470a14e72bf47ab98a14c13490ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
-  StartDelay: 2
-  Repeat: 1.5
+  GameOverUI: {fileID: 0}
+  enemies:
+  - {fileID: 6227885837934171693, guid: 14eb59693b6e681408470cc40d076e11, type: 3}
+  - {fileID: 8267127682217513773, guid: 26c50fb773423bf4497f195923ecde3f, type: 3}
+  - {fileID: 5425748007172719745, guid: 4fc94f0708f7c394ba419080c3c826c5, type: 3}
+  spawners:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

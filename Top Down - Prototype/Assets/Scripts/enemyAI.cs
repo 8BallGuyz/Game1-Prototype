@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class enemyAI : MonoBehaviour
 {
+    public GameOverScreen gameOverScreen;
+    public player_control player_Control;
+
     public float speed;
     public Rigidbody2D rb;
 
@@ -41,4 +44,5 @@ public class enemyAI : MonoBehaviour
             rb.rotation = angle;
         }
     }
+
 }

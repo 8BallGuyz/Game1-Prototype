@@ -15,11 +15,11 @@ GameObject:
   - component: {fileID: 7310007041085754557}
   m_Layer: 0
   m_Name: Enemy 3
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7044585003655722580
 Transform:
   m_ObjectHideFlags: 0
@@ -166,5 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f94f13099c6e7bc43a90f40266bb5ed7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  gameOverScreen: {fileID: 1733687815884261054, guid: 1db15b0be6552ef47a022e8f05dcd38f, type: 3}
+  player_Control: {fileID: 5286055781847449845, guid: 9ae8601a21181e244824f13563e9d8cd, type: 3}
+  speed: 5
   rb: {fileID: 3325300065257477772}

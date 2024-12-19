@@ -4,6 +4,10 @@ using System.Collections.Generic;
 
 public class player_control : MonoBehaviour
 {
+    public GameOverScreen gameOverScreen;
+    public GameManager gameManager;
+    public int Lives = 1;
+
     public float speed;
     public float defaultspeed;
     public float sprintspeed;
@@ -50,5 +54,26 @@ public class player_control : MonoBehaviour
         {
             speed = defaultspeed;
         }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Lives = Lives - 1;
+
+            // Check if lives are 0 or less and call GameOver
+            if (Lives <= 0)
+            {
+                gameObject.SetActive(false);
+                GameOver();
+            }
+        }
+    }
+
+    public void GameOver()
+    {
+        // Call the GameOverScreen's Setup method
+        gameOverScreen.Setup(Lives);
     }
 }

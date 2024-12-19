@@ -5,6 +5,8 @@ using UnityEngine.UIElements;
 public class enemy_spawner : MonoBehaviour
 {
     public GameObject enemy;
+    public GameOverScreen gameOverScreen;
+    public player_control player_Control;
 
     public float StartDelay = 2f;
     public float Repeat = 1.5f;

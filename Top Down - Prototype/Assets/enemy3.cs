@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class enemy3 : MonoBehaviour
 {
+    public GameOverScreen gameOverScreen;
+    public player_control player_Control;
+
     public float speed;
     public Rigidbody2D rb;
 

@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3566589767363798217
 Transform:
   m_ObjectHideFlags: 0
@@ -102,6 +102,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db19ac44d139c6b4286d2ee06faefd5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverScreen: {fileID: 1733687815884261054, guid: 1db15b0be6552ef47a022e8f05dcd38f, type: 3}
+  player_Control: {fileID: 5286055781847449845, guid: 9ae8601a21181e244824f13563e9d8cd, type: 3}
   speed: 2
   rb: {fileID: 8672983822845960924}
 --- !u!61 &8884255261626819347
